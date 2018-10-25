@@ -29,7 +29,7 @@ public class MySimpleStackTest {
         // Code  under  test
         s0.push(item);
         //  assertions (oracle)
-        assertFals"The  stack  must be not  empty", s0.isEmpty ());
+        assertFalse("The  stack  must be not  empty", s0.isEmpty ());
         assertEquals("The  stack  shoult  contain 1 item", 1, s0.getSize ());
         assertSame("Pushed  itm  should  be on top of  stack", item,s0.peek ());
     }
