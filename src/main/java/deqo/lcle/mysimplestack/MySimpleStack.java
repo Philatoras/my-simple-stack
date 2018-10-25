@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.EmptyStackException;
 
 public class MySimpleStack implements SimpleStack {
-
+    //Attributs
     private ArrayList<Item> pile;
     private int size;
 
