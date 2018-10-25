@@ -23,7 +23,7 @@ public class MySimpleStackTest {
     }
 
     @Test
-    public void testPush(){
+    public void testPushEmpty(){
         SimpleStack s0 = new MySimpleStack();
         Item  item = new  Item ();
         // Code  under  test
@@ -55,14 +55,13 @@ public class MySimpleStackTest {
     }
 
     @Test
-    public void testPushPop(){
+    public void testPushPopEmpty(){
         SimpleStack s0 = new MySimpleStack();
         Item  item = new  Item ();
-        Item item2;
         // Code  under  test
         s0.push(item);
-        s0.pop();
         //  assertions (oracle)
+        assertSame(item, s0.pop());
         assertTrue("The  stack  must be empty", s0.isEmpty ());
     }
 
